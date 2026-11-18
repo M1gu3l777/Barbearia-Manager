@@ -1,0 +1,27 @@
+
+# Eclipse
+.metadata/
+.settings/
+.project
+.classpath
+
+# Arquivos compilados
+build/
+bin/
+target/
+*.class
+
+# Configuracoes locais
+.env
+.env.*
+*.log
+
+# Arquivos temporarios
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Credenciais
+application-local.properties
+database.properties
