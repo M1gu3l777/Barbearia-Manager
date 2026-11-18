@@ -1,0 +1,327 @@
+
+/* ==========================================
+   BARBEARIA MANAGER - ESTILO PRINCIPAL
+   ========================================== */
+
+:root {
+    --preto: #1c1c1c;
+    --grafite: #292929;
+    --dourado: #c69c52;
+    --dourado-hover: #ad8240;
+    --fundo: #f5f2ec;
+    --branco: #ffffff;
+    --texto: #333333;
+    --borda: #e5dfd5;
+}
+
+/* Configurações gerais */
+* {
+    font-family: 'Fira Sans', 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+/* Barra de navegação */
+.navbar-inverse {
+    background-color: var(--preto);
+    border-color: var(--preto);
+    min-height: 65px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: var(--dourado);
+    font-weight: bold;
+    padding-top: 17px;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #e3bd77;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #eeeeee;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    transition: 0.2s;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: var(--dourado);
+    background-color: var(--grafite);
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover {
+    background-color: var(--grafite);
+    color: var(--dourado);
+}
+
+/* Menu de perfil */
+.dropdown-menu {
+    border-radius: 6px;
+    border: 1px solid var(--borda);
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: var(--fundo);
+    color: var(--dourado-hover);
+}
+
+/* Botão Sair */
+.dropdown-menu button[type="submit"] {
+    width: 100%;
+    text-align: left;
+    color: var(--texto) !important;
+    border: none;
+    background: transparent;
+    padding: 10px 20px !important;
+}
+
+.dropdown-menu button[type="submit"]:hover {
+    background-color: var(--fundo);
+    color: var(--dourado-hover) !important;
+}
+
+/* Conteúdo principal */
+#container {
+    padding: 20px 30px;
+}
+
+h3,
+.page-header {
+    color: var(--preto);
+    font-weight: 600;
+}
+
+hr {
+    border-color: var(--borda);
+}
+
+/* Tabelas */
+.table-responsive {
+    background-color: var(--branco);
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid var(--borda);
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table > thead > tr > th {
+    background-color: var(--grafite);
+    color: var(--branco);
+    border-bottom: 2px solid var(--dourado);
+    padding: 14px;
+}
+
+.table > tbody > tr > td {
+    padding: 12px;
+    vertical-align: middle;
+    border-top: 1px solid var(--borda);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #faf8f4;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #f2e9d9;
+}
+
+/* Botões */
+.btn {
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.btn-danger,
+.btn-primary {
+    background-color: var(--dourado);
+    border-color: var(--dourado);
+    color: var(--preto);
+    font-weight: 600;
+}
+
+.btn-danger:hover,
+.btn-primary:hover,
+.btn-danger:focus,
+.btn-primary:focus {
+    background-color: var(--dourado-hover);
+    border-color: var(--dourado-hover);
+    color: var(--branco);
+}
+
+.btn-info {
+    background-color: var(--grafite);
+    border-color: var(--grafite);
+}
+
+.btn-info:hover {
+    background-color: var(--preto);
+    border-color: var(--preto);
+}
+
+.table .btn-danger {
+    background-color: #a94442;
+    border-color: #a94442;
+    color: white;
+}
+
+.table .btn-danger:hover {
+    background-color: #843534;
+    border-color: #843534;
+}
+
+/* Formulários */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #d7d1c7;
+    box-shadow: none;
+    height: 40px;
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+.form-control:focus {
+    border-color: var(--dourado);
+    box-shadow: 0 0 4px rgba(198, 156, 82, 0.3);
+}
+
+.form-group label {
+    color: var(--grafite);
+    font-weight: 600;
+}
+
+#actions {
+    margin-bottom: 30px;
+}
+
+/* Paginação */
+.pagination > li > a {
+    color: var(--grafite);
+    border-color: var(--borda);
+}
+
+.pagination > li > a:hover {
+    background-color: #f2e9d9;
+    color: var(--preto);
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus {
+    background-color: var(--dourado);
+    border-color: var(--dourado);
+    color: var(--preto);
+}
+
+/* Alertas */
+.alert {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    border-radius: 5px;
+}
+
+/* Janela de exclusão */
+.modal-header {
+    background-color: var(--grafite);
+    color: var(--branco);
+}
+
+.modal-content {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Tela de Login */
+.panel {
+    border-radius: 8px;
+    border: 1px solid var(--borda);
+    overflow: hidden;
+}
+
+.panel-default > .panel-heading {
+    background-color: var(--grafite);
+    color: var(--dourado);
+    border-color: var(--grafite);
+}
+
+.panel-body {
+    padding: 25px;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+
+    #container {
+        padding: 15px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    #top .btn {
+        margin-bottom: 15px;
+    }
+    
+    
+/* Título da tela de Login */
+.panel-default > .panel-heading {
+    background-color: #292929;
+    border-color: #292929;
+    text-align: center;
+}
+
+.panel-default > .panel-heading h3 {
+    color: #c69c52;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Botão Entrar */
+.panel-body .btn-primary {
+    background-color: #c69c52;
+    border-color: #c69c52;
+    color: #1c1c1c;
+    font-weight: bold;
+}
+
+.panel-body .btn-primary:hover {
+    background-color: #ad8240;
+    border-color: #ad8240;
+    color: #ffffff;
+}
+    
+    
+    
+/* CORREÇÃO DO TÍTULO DO LOGIN */
+
+.panel-default > .panel-heading {
+    background-color: #292929 !important;
+    border-color: #292929 !important;
+}
+
+.panel-default > .panel-heading h3 {
+    color: #ffffff !important;
+    font-weight: bold !important;
+    text-align: center;
+    margin: 10px 0;
+}
+    
+}
